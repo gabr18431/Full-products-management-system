@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #2e2e2e;
+    color: #fff;
+    font-family: system-ui;
+}
+.crud {
+    width: 80%;
+    margin: auto;
+}
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 35px 0 ;
+}
+.header h1 {
+    color: #ccc;
+}
+.header h2 {
+    font-weight: normal;
+    margin-top: 5px;
+    color: #a1a1a1;
+}
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #222;
+    margin: 10px 0;
+    padding: 5px 5px 5px 8px;
+    border-radius: 6px;
+    height: 40px;
+    color: #a1a1a1;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+input:focus {
+    background-color: #111;
+    transform: scale(1.08);
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price input {
+    width: 20%;
+}
+#total {
+    background-color: #a00c02ce;
+    border-radius: 6px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+}
+#total::before {
+    content: 'Total : ';
+}
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #06142e;
+    margin: 10px 0;
+    border-radius: 20px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+button:hover {
+    background-color: #1b3358;
+    letter-spacing: 2px;
+}
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+table thead {
+    text-transform: uppercase;
+    font-size: 18px;
+    border-top: 1px solid #a1a1a1;
+    border-bottom: 1px solid #a1a1a1;
+}
+th {
+    padding: 10px 5px;
+}
+td {
+    padding: 5px;
+}
+#deleteAll {
+    margin: 20px 0;
+}
+#update {
+    border-radius: 6px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(25, 124, 25, 0.624);
+} 
+#update:hover {
+    background-color: rgb(46, 214, 46);
+    letter-spacing: 1px;
+} 
+#delete {
+    border-radius: 6px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(155, 14, 14, 0.705);
+} 
+#delete:hover {
+    background-color: red;
+    letter-spacing: 1px;
+} 
+.deleteAll:hover {
+    background-color: red;
+    letter-spacing: 1px;
+}
+.table {
+    width: 100%;
+}
+@media (max-width: 868px) {
+    .crud {
+        width: 90%;
+    }
+    .table {
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 468px) {
+    .header h1 {
+        font-size: 24px;
+    }
+    .price {
+        flex-wrap: wrap;
+    }
+    .price input {
+        width: 45%;
+    }
+    .price #total {
+        width: 100%;
+    }
+    .btnSearch {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btnSearch button {
+        width: 100%;
+    }
+}
